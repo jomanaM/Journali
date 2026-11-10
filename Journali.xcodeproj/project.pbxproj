@@ -1,0 +1,245 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A14590BA0000000000000101 /* JournaliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000201 /* JournaliApp.swift */; };
+		A14590BA0000000000000102 /* JournalHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000202 /* JournalHomeView.swift */; };
+		A14590BA0000000000000103 /* JournalEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000203 /* JournalEditorView.swift */; };
+		A14590BA0000000000000104 /* JournalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000204 /* JournalStyle.swift */; };
+		A14590BA0000000000000105 /* JournalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000205 /* JournalData.swift */; };
+		A14590BA0000000000000106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000206 /* Assets.xcassets */; };
+		A14590BA0000000000000108 /* JournalVoiceSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000208 /* JournalVoiceSearch.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A14590BA0000000000000201 /* JournaliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournaliApp.swift; sourceTree = "<group>"; };
+		A14590BA0000000000000202 /* JournalHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalHomeView.swift; sourceTree = "<group>"; };
+		A14590BA0000000000000203 /* JournalEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEditorView.swift; sourceTree = "<group>"; };
+		A14590BA0000000000000204 /* JournalStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalStyle.swift; sourceTree = "<group>"; };
+		A14590BA0000000000000205 /* JournalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalData.swift; sourceTree = "<group>"; };
+		A14590BA0000000000000206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A14590BA0000000000000207 /* Journali.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journali.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14590BA0000000000000208 /* JournalVoiceSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalVoiceSearch.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A14590BA0000000000000301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A14590BA0000000000000401 = {
+			isa = PBXGroup;
+			children = (
+				A14590BA0000000000000402 /* Journali */,
+				A14590BA0000000000000403 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A14590BA0000000000000402 /* Journali */ = {
+			isa = PBXGroup;
+			children = (
+				A14590BA0000000000000201 /* JournaliApp.swift */,
+				A14590BA0000000000000205 /* JournalData.swift */,
+				A14590BA0000000000000202 /* JournalHomeView.swift */,
+				A14590BA0000000000000203 /* JournalEditorView.swift */,
+				A14590BA0000000000000204 /* JournalStyle.swift */,
+				A14590BA0000000000000208 /* JournalVoiceSearch.swift */,
+				A14590BA0000000000000206 /* Assets.xcassets */,
+			);
+			path = Journali;
+			sourceTree = "<group>";
+		};
+		A14590BA0000000000000403 /* Products */ = {
+			isa = PBXGroup;
+			children = (A14590BA0000000000000207 /* Journali.app */);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A14590BA0000000000000501 /* Journali */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14590BA0000000000000B02 /* Build configuration list for PBXNativeTarget "Journali" */;
+			buildPhases = (
+				A14590BA0000000000000801 /* Sources */,
+				A14590BA0000000000000301 /* Frameworks */,
+				A14590BA0000000000000701 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = Journali;
+			productName = Journali;
+			productReference = A14590BA0000000000000207 /* Journali.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A14590BA0000000000000601 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A14590BA0000000000000501 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A14590BA0000000000000B01 /* Build configuration list for PBXProject "Journali" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = A14590BA0000000000000401;
+			productRefGroup = A14590BA0000000000000403 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (A14590BA0000000000000501 /* Journali */);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A14590BA0000000000000701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (A14590BA0000000000000106 /* Assets.xcassets in Resources */);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A14590BA0000000000000801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14590BA0000000000000101 /* JournaliApp.swift in Sources */,
+				A14590BA0000000000000102 /* JournalHomeView.swift in Sources */,
+				A14590BA0000000000000103 /* JournalEditorView.swift in Sources */,
+				A14590BA0000000000000104 /* JournalStyle.swift in Sources */,
+				A14590BA0000000000000105 /* JournalData.swift in Sources */,
+				A14590BA0000000000000108 /* JournalVoiceSearch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A14590BA0000000000000A01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A14590BA0000000000000A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A14590BA0000000000000A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Journali;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Journali uses the microphone to turn your voice into a journal search.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Journali recognizes your speech on this device to search your journal.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.journali;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A14590BA0000000000000A04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Journali;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Journali uses the microphone to turn your voice into a journal search.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Journali recognizes your speech on this device to search your journal.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.journali;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A14590BA0000000000000B01 /* Build configuration list for PBXProject "Journali" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14590BA0000000000000A01 /* Debug */,
+				A14590BA0000000000000A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14590BA0000000000000B02 /* Build configuration list for PBXNativeTarget "Journali" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14590BA0000000000000A03 /* Debug */,
+				A14590BA0000000000000A04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A14590BA0000000000000601 /* Project object */;
+}
