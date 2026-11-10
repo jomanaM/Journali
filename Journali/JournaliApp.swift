@@ -13,6 +13,8 @@ struct JournaliApp: App {
     }
 }
 
+
+
 private struct JournaliRootView: View {
     let journal: JournalViewModel
     @State private var showSplash = true
