@@ -13,8 +13,7 @@ struct JournaliApp: App {
     }
 }
 
-
-
+// MARK: - Splash screen and home screen
 
 private struct JournaliRootView: View {
     let journal: JournalViewModel

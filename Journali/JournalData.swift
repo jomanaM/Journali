@@ -1,6 +1,8 @@
 import Combine
 import Foundation
 
+// MARK: - Models
+
 struct JournalEntry: Identifiable, Codable, Equatable {
     let id: UUID
     var title: String
@@ -42,11 +44,9 @@ struct JournalDraft: Identifiable {
     }
 }
 
-enum JournalOrder: CaseIterable, Identifiable {
-    case date
+enum JournalOrder {
     case bookmark
-
-    var id: Self { self }
+    case date
 
     var title: String {
         switch self {
@@ -54,21 +54,14 @@ enum JournalOrder: CaseIterable, Identifiable {
         case .bookmark: "Sort by Bookmark"
         }
     }
-
-    var icon: String {
-        switch self {
-        case .date: "calendar"
-        case .bookmark: "bookmark"
-        }
-    }
 }
+
+// MARK: - View model
 
 @MainActor
 final class JournalViewModel: ObservableObject {
     @Published var searchText = ""
     @Published var order: JournalOrder = .date
-    @Published var bookmarksOnly = false
-    @Published var selectedDate: Date?
     @Published private(set) var entries: [JournalEntry] = []
     @Published private(set) var loadError: String?
 
@@ -83,25 +76,16 @@ final class JournalViewModel: ObservableObject {
         let query = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
         return entries
             .filter { entry in
-                if bookmarksOnly && !entry.isBookmarked { return false }
-                if let selectedDate, !Calendar.current.isDate(entry.date, inSameDayAs: selectedDate) {
-                    return false
-                }
-                return query.isEmpty || entry.displayTitle.localizedStandardContains(query) ||
+                query.isEmpty || entry.displayTitle.localizedStandardContains(query) ||
                     entry.text.localizedStandardContains(query)
             }
-            .sorted { first, second in
-                if order == .bookmark && first.isBookmarked != second.isBookmarked {
-                    return first.isBookmarked
+            .sorted { firstEntry, secondEntry in
+                let differentBookmarkStatus = firstEntry.isBookmarked != secondEntry.isBookmarked
+                if order == .bookmark && differentBookmarkStatus {
+                    return firstEntry.isBookmarked
                 }
-                return first.date > second.date
+                return firstEntry.date > secondEntry.date
             }
-    }
-
-    func clearFilters() {
-        searchText = ""
-        bookmarksOnly = false
-        selectedDate = nil
     }
 
     func reload() {
@@ -163,6 +147,8 @@ final class JournalViewModel: ObservableObject {
     }
 }
 
+// MARK: - Local storage
+
 private struct JournalFileStore {
     static var defaultURL: URL {
         URL.applicationSupportDirectory
@@ -190,6 +176,8 @@ private struct JournalFileStore {
         try data.write(to: url, options: [.atomic, .completeFileProtection])
     }
 }
+
+// MARK: - Error messages
 
 private enum JournalDataError: LocalizedError {
     case emptyEntry

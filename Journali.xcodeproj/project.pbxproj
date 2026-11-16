@@ -13,7 +13,6 @@
 		A14590BA0000000000000104 /* JournalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000204 /* JournalStyle.swift */; };
 		A14590BA0000000000000105 /* JournalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000205 /* JournalData.swift */; };
 		A14590BA0000000000000106 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000206 /* Assets.xcassets */; };
-		A14590BA0000000000000108 /* JournalVoiceSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000208 /* JournalVoiceSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		A14590BA0000000000000205 /* JournalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalData.swift; sourceTree = "<group>"; };
 		A14590BA0000000000000206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A14590BA0000000000000207 /* Journali.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journali.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A14590BA0000000000000208 /* JournalVoiceSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalVoiceSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +52,6 @@
 				A14590BA0000000000000202 /* JournalHomeView.swift */,
 				A14590BA0000000000000203 /* JournalEditorView.swift */,
 				A14590BA0000000000000204 /* JournalStyle.swift */,
-				A14590BA0000000000000208 /* JournalVoiceSearch.swift */,
 				A14590BA0000000000000206 /* Assets.xcassets */,
 			);
 			path = Journali;
@@ -142,7 +139,6 @@
 				A14590BA0000000000000103 /* JournalEditorView.swift in Sources */,
 				A14590BA0000000000000104 /* JournalStyle.swift in Sources */,
 				A14590BA0000000000000105 /* JournalData.swift in Sources */,
-				A14590BA0000000000000108 /* JournalVoiceSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +234,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 672U7ZM45X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Journali;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Journali uses the microphone to turn your voice into a journal search.";
@@ -270,6 +267,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 672U7ZM45X;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Journali;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Journali uses the microphone to turn your voice into a journal search.";

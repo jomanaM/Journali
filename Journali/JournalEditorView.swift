@@ -83,13 +83,18 @@ struct JournalEditorView: View {
             Text("Are you sure you want to discard changes to this journal entry?")
         }
         .alert("Couldn’t Save Entry", isPresented: Binding(
-            get: { saveError != nil }, set: { if !$0 { saveError = nil } }
+            get: { saveError != nil },
+            set: { isPresented in
+                if !isPresented { saveError = nil }
+            }
         )) {
             Button("OK", role: .cancel) {}
         } message: {
             Text(saveError ?? "")
         }
     }
+
+    // MARK: - Editor actions
 
     private func close() {
         if draft.hasChanges {
@@ -107,6 +112,8 @@ struct JournalEditorView: View {
             saveError = error.localizedDescription
         }
     }
+
+    // MARK: - Title and text fields
 
     private struct JournalEntryFields: View {
         @Binding var draft: JournalDraft

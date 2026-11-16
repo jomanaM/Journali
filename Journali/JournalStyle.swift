@@ -1,5 +1,7 @@
 import SwiftUI
 
+// MARK: - Colors
+
 enum JournalPalette {
     static let background = Color.black
     static let surface = Color(red: 28 / 255, green: 28 / 255, blue: 30 / 255)
@@ -10,6 +12,8 @@ enum JournalPalette {
     static let destructive = Color(red: 253 / 255, green: 69 / 255, blue: 60 / 255)
     static let outline = Color.white.opacity(0.13)
 }
+
+// MARK: - Typography
 
 enum JournalType {
     case display, headingLarge, headingMedium, cardTitle
@@ -51,8 +55,15 @@ extension View {
     }
 }
 
+// MARK: - Date formatting
+
 extension Date {
     var journalDate: String {
-        formatted(.verbatim("\(day: .twoDigits)/\(month: .twoDigits)/\(year: .defaultDigits)", locale: Locale(identifier: "en_GB"), timeZone: .current, calendar: Calendar(identifier: .gregorian)))
+        formatted(.verbatim(
+            "\(day: .twoDigits)/\(month: .twoDigits)/\(year: .defaultDigits)",
+            locale: Locale(identifier: "en_GB"),
+            timeZone: .current,
+            calendar: Calendar(identifier: .gregorian)
+        ))
     }
 }
