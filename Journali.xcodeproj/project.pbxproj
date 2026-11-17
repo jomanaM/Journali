@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BA1FA3930AC6EB3007B2131 /* Journali.icon in Resources */ = {isa = PBXBuildFile; fileRef = 2BA1FA3830AC6EB3007B2131 /* Journali.icon */; };
 		A14590BA0000000000000101 /* JournaliApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000201 /* JournaliApp.swift */; };
 		A14590BA0000000000000102 /* JournalHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000202 /* JournalHomeView.swift */; };
 		A14590BA0000000000000103 /* JournalEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14590BA0000000000000203 /* JournalEditorView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BA1FA3830AC6EB3007B2131 /* Journali.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Journali.icon; sourceTree = "<group>"; };
 		A14590BA0000000000000201 /* JournaliApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournaliApp.swift; sourceTree = "<group>"; };
 		A14590BA0000000000000202 /* JournalHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalHomeView.swift; sourceTree = "<group>"; };
 		A14590BA0000000000000203 /* JournalEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEditorView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 				A14590BA0000000000000202 /* JournalHomeView.swift */,
 				A14590BA0000000000000203 /* JournalEditorView.swift */,
 				A14590BA0000000000000204 /* JournalStyle.swift */,
+				2BA1FA3830AC6EB3007B2131 /* Journali.icon */,
 				A14590BA0000000000000206 /* Assets.xcassets */,
 			);
 			path = Journali;
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A14590BA0000000000000106 /* Assets.xcassets in Resources */,
+				2BA1FA3930AC6EB3007B2131 /* Journali.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +234,7 @@
 		A14590BA0000000000000A03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Journali;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -263,7 +267,7 @@
 		A14590BA0000000000000A04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Journali;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
